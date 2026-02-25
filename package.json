@@ -1,0 +1,12 @@
+{
+  "name": "filmbulletin-sg",
+  "version": "1.0.0",
+  "description": "Singapore indie & repertory film screenings",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

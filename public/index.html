@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film Bulletin SG — Indie & Repertory Screenings</title>
+  <meta name="description" content="Singapore indie film screenings, repertory cinema, film festivals, and special events. All non-mainstream screenings in one place.">
+  <meta property="og:title" content="Film Bulletin SG">
+  <meta property="og:description" content="Indie & repertory film screenings in Singapore">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1 class="hero-title">FILM BULLETIN <span class="accent">SG</span></h1>
+      <p class="hero-sub">indie & repertory screenings in singapore</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="filters">
+      <div class="filter-row">
+        <div class="quick-filters">
+          <button class="quick-btn active" data-range="week">This Week</button>
+          <button class="quick-btn" data-range="month">This Month</button>
+          <button class="quick-btn" data-range="all">All Upcoming</button>
+        </div>
+        <div class="filter-selects">
+          <select id="venue-filter" class="filter-select">
+            <option value="">All Venues</option>
+          </select>
+          <select id="type-filter" class="filter-select">
+            <option value="">All Types</option>
+          </select>
+        </div>
+      </div>
+      <div class="results-count"><span id="count">0</span> screenings</div>
+    </div>
+
+    <div id="events-grid" class="events-grid"></div>
+    
+    <div id="loading" class="loading">
+      <div class="spinner"></div>
+      <p>Loading screenings...</p>
+    </div>
+
+    <div id="empty" class="empty" style="display:none">
+      <p>No screenings found for this filter.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Data sourced from <a href="https://filmbulletin.sg" target="_blank" rel="noopener">filmbulletin.sg</a>. Not affiliated.</p>
+    <p class="footer-meta">Last updated: <span id="last-updated">-</span></p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
