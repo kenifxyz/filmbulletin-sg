@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  filmbulletin-sg:
+    build: .
+    container_name: filmbulletin-sg
+    restart: unless-stopped
+    ports:
+      - "3420:3420"
+    environment:
+      - PORT=3420
+      - NODE_ENV=production

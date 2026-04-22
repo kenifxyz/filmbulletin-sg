@@ -1,0 +1,9 @@
+node_modules
+.git
+.env
+.env.*
+*.log
+.DS_Store
+README.md
+CLAUDE.md
+ecosystem.config.js
